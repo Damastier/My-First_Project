@@ -1,0 +1,87 @@
+/* CSS Grid */
+
+body {
+	background: url("./image/wooden-floor-1853403_960_720.jpg") no-repeat center top/cover;
+    font-family: Calibri, sans-serif;
+    color: #000000;
+    margin:  0;
+	padding: 0;
+}
+
+header {
+	background: url("./image/wooden-floor-1853403_960_720.jpg") no-repeat center top/cover;
+    margin:  0;
+	padding: 0;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav {
+	float: right;
+	margin-top: 50px;
+}
+
+.logo_grid {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li{
+    float: left;
+    display: block;
+    margin-right: 25px;    
+}
+
+.menu li a {
+	color: #FAEBD7;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	transition: 2s all;
+	display: inline-block;
+}
+
+.menu li a:hover {
+	color: #007fff;
+	font-size: 30px;
+	text-shadow: 0 1px 0 #eee;
+	transform: rotate(-5deg);
+	border: 3px solid #282923;
+	border-radius: 30px;
+	padding: 10px;
+	background:#000;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: 100px 200px 200px;
+	grid-auto-rows: 100px;
+	grid-gap: 25px;
+}
+
+.grid div {
+	background-color: #28314E;
+	border: 3px solid #ADD8E6;
+	padding: 8px 15px;
+	overflow: auto;
+	color: #ffffff;
+	font-size: 17px;
+}
+.grid div:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+/* Styles to Gallery */
